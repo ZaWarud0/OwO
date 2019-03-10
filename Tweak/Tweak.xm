@@ -1,4 +1,4 @@
-static NSArray *prefixes = @[@"OwO ", @"H-hewwo?? ", @"Huohhhh. ", @"Haiiii! ", @"UwU ", @"OWO ", @"HIIII! "];
+static NSArray *prefixes = @[@"OwO ", @"H-hewwo?? ", @"Huohhhh. ", @"Haiiii! ", @"UwU ", @"OWO ", @"HIIII! ", @"<3 "];
 static NSArray *suffixes = @[@" :3", @" UwU", @" ʕʘ‿ʘʔ", @" >_>", @" ^_^", @"..", @" Huoh.", @" ^-^", @" ;_;", @" ;-;", @" xD", @" x3", @" :D", @" :P", @" ;3", @" XDDD", @", fwendo ", @"ㅇㅅㅇ ", @"(人◕ω◕) ", @"（＾ｖ＾） "];
 
 %hook NCNotificationContentView
