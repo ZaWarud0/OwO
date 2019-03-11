@@ -46,7 +46,7 @@ static NSDictionary *replacement = @{
     @"nepeta": @{
         @"awful": @"pawful",
         @"per": @"purr",
-        @"por", @"purr",
+        @"por": @"purr",
         @"fer": @"fur",
         @"pau": @"paw",
         @"po": @"paw",
@@ -106,14 +106,73 @@ NSString *owoify (NSString *text, bool replacementOnly) {
 
 %end
 
+%group OwOEverywhere
+
+%hook UILabel
+
+-(void)setText:(NSString *)orig {
+    if (!orig) {
+        %orig(orig);
+        return;
+    }
+    
+    %orig(owoify(orig, true));
+}
+
+%end
+
+%end
+
+%group OwOIconLabels
+
+%hook SBIconLabelImageParameters
+
+-(NSString *)text {
+    return owoify(%orig, true);
+}
+
+%end
+
+%end
+
+%group OwOSettings
+
+%hook PSSpecifier
+
+-(NSString *)name {
+    return owoify(%orig, true);
+}
+
+%end
+
+%end
+
 %ctor {
+    if (![NSProcessInfo processInfo]) return;
+    NSString *processName = [NSProcessInfo processInfo].processName;
+    bool isSpringboard = [@"SpringBoard" isEqualToString:processName];
+
     HBPreferences *file = [[HBPreferences alloc] initWithIdentifier:@"me.nepeta.owo"];
 
     if ([([file objectForKey:@"Enabled"] ?: @(YES)) boolValue]) {
         mode = [file objectForKey:@"Style"] ?: @"furry";
 
-        if ([([file objectForKey:@"EnabledNotifications"] ?: @(YES)) boolValue]) {
-            %init(OwONotifications);
+        if ([([file objectForKey:@"EnabledEverywhere"] ?: @(NO)) boolValue]) {
+            %init(OwOEverywhere);
+        }
+
+        if ([([file objectForKey:@"EnabledSettings"] ?: @(NO)) boolValue]) {
+            %init(OwOSettings);
+        }
+
+        if (isSpringboard) {
+            if ([([file objectForKey:@"EnabledNotifications"] ?: @(YES)) boolValue]) {
+                %init(OwONotifications);
+            }
+
+            if ([([file objectForKey:@"EnabledIconLabels"] ?: @(NO)) boolValue]) {
+                %init(OwOIconLabels);
+            }
         }
     }
 }

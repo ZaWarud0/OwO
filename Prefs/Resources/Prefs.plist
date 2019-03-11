@@ -82,6 +82,48 @@
 			<key>alternateColors</key>
 			<true/>
 		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>me.nepeta.owo</string>
+			<key>label</key>
+			<string>EVERYWHERE</string>
+			<key>key</key>
+			<string>EnabledEverywhere</string>
+			<key>alternateColors</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>me.nepeta.owo</string>
+			<key>label</key>
+			<string>SETTINGS</string>
+			<key>key</key>
+			<string>EnabledSettings</string>
+			<key>alternateColors</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>me.nepeta.owo</string>
+			<key>label</key>
+			<string>ICON_LABELS</string>
+			<key>key</key>
+			<string>EnabledIconLabels</string>
+			<key>alternateColors</key>
+			<true/>
+		</dict>
 
 		<!-- Credits -->
 		<dict>
