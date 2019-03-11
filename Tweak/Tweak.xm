@@ -71,14 +71,14 @@ NSString *owoify (NSString *text, bool replacementOnly) {
         }
     }
 
-    if (!replacementOnly) {
-        if (prefixes[mode]) {
-            temp = [prefixes[mode][arc4random() % [prefixes[mode] count]] stringByAppendingString:temp];
-        }
+    if (replacementOnly) return temp;
 
-        if (suffixes[mode]) {
-            temp = [temp stringByAppendingString:suffixes[mode][arc4random() % [suffixes[mode] count]]];
-        }
+    if (prefixes[mode]) {
+        temp = [prefixes[mode][arc4random() % [prefixes[mode] count]] stringByAppendingString:temp];
+    }
+
+    if (suffixes[mode]) {
+        temp = [temp stringByAppendingString:suffixes[mode][arc4random() % [suffixes[mode] count]]];
     }
 
     return temp;
