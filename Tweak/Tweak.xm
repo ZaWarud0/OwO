@@ -5,7 +5,7 @@ static NSDictionary *prefixes = @{
 };
 
 static NSDictionary *suffixes = @{
-    @"furry": @[@" :3", @" UwU", @" ʕʘ‿ʘʔ", @" >_>", @" ^_^", @"..", @" Huoh.", @" ^-^", @" ;_;", @" ;-;", @" xD", @" x3", @" :D", @" :P", @" ;3", @" XDDD", @", fwendo", @" ㅇㅅㅇ", @" (人◕ω◕)", @"（＾ｖ＾）", @" Sigh."]
+    @"furry": @[@" :3", @" UwU", @" ʕʘ‿ʘʔ", @" >_>", @" ^_^", @"..", @" Huoh.", @" ^-^", @" ;_;", @" ;-;", @" xD", @" x3", @" :D", @" :P", @" ;3", @" XDDD", @", fwendo", @" ㅇㅅㅇ", @" (人◕ω◕)", @"（＾ｖ＾）", @" Sigh.", @" >_<"]
 };
 
 static NSDictionary *replacement = @{
@@ -17,6 +17,23 @@ static NSDictionary *replacement = @{
         @"has": @"haz",
         @"have": @"haz",
         @"you": @"uu"
+    },
+    @"leet": @{
+        @"cks": @"x",
+        @"ck": @"x",
+        @"er": @"or",
+        @"and": @"&",
+        @"anned": @"&",
+        @"porn": @"pr0n",
+        @"a": @"4",
+        @"o": @"0",
+        @"e": @"3",
+        @"b": @"8",
+        @"s": @"5",
+        @"z": @"2",
+        @"l": @"1",
+        @"t": @"7",
+        @"lol": @"lulz",
     }
 };
 
@@ -74,7 +91,7 @@ NSString *owoify (NSString *text, bool replacementOnly) {
     HBPreferences *file = [[HBPreferences alloc] initWithIdentifier:@"me.nepeta.owo"];
 
     if ([([file objectForKey:@"Enabled"] ?: @(YES)) boolValue]) {
-        mode = [file objectForKey:@"Enabled"] ?: @"furry";
+        mode = [file objectForKey:@"Style"] ?: @"furry";
 
         if ([([file objectForKey:@"EnabledNotifications"] ?: @(YES)) boolValue]) {
             %init(OwONotifications);
