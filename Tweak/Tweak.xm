@@ -46,10 +46,13 @@ static NSDictionary *replacement = @{
     @"nepeta": @{
         @"awful": @"pawful",
         @"per": @"purr",
+        @"por", @"purr",
         @"fer": @"fur",
         @"pau": @"paw",
+        @"po": @"paw",
+        @"best": @"bestest",
         @"ee": @"33",
-        @"EE": @"33"
+        @"EE": @"33",
     }
 };
 
