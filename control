@@ -1,5 +1,6 @@
-Package: me.nepeta.owo
+Package: me.zawarudo.owo
 Name: OwO
+Conflicts: me.nepeta.owo
 Depends: mobilesubstrate, ws.hbang.common (>= 1.11)
 Version: 0.4.0
 Architecture: iphoneos-arm
