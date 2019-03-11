@@ -51,14 +51,14 @@
 				<string>furry</string>
 				<string>pirate</string>
 				<string>leet</string>
-				<string>nepeta</string>
+				<string>anime</string>
 			</array>
 			<key>validTitles</key>
 			<array>
 				<string>Furry</string>
 				<string>Pirate</string>
 				<string>1337</string>
-				<string>Nepeta</string>
+				<string>anime</string>
 			</array>
 		</dict>
 
@@ -130,7 +130,7 @@
 			<key>cell</key>
 			<string>PSGroupCell</string>
 			<key>footerText</key>
-			<string>OwO by Nepeta</string>
+			<string>OwO by Nepeta (v0.4.0 by ZaWarud0)</string>
 			<key>isStaticText</key>
 			<true/>
 		</dict>
