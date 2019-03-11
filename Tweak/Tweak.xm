@@ -19,6 +19,7 @@ static NSDictionary *replacement = @{
         @"has": @"haz",
         @"have": @"haz",
         @"you": @"uu",
+        @"the ": @"da ",
     },
     @"leet": @{
         @"cks": @"x",
