@@ -12,6 +12,7 @@ static NSArray *suffixes = @[@" :3", @" UwU", @" ʕʘ‿ʘʔ", @" >_>", @" ^_^",
     NSString *prefix = prefixes[arc4random() % [prefixes count]];
     NSString *suffix = suffixes[arc4random() % [suffixes count]];
     orig = [orig stringByReplacingOccurrencesOfString:@"r" withString:@"w"];
+    orig = [orig stringByReplacingOccurrencesOfString:@"l" withString:@"w"];
     orig = [orig stringByReplacingOccurrencesOfString:@"no" withString:@"nu"];
     orig = [orig stringByReplacingOccurrencesOfString:@"have" withString:@"haz"];
     orig = [orig stringByReplacingOccurrencesOfString:@"has" withString:@"haz"];
