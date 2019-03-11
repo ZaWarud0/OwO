@@ -1,13 +1,13 @@
 #import <Cephei/HBPreferences.h>
 
 static NSDictionary *prefixes = @{
-    @"furry": @[@"OwO ", @"H-hewwo?? ", @"Huohhhh. ", @"Haiiii! ", @"UwU ", @"OWO ", @"HIIII! ", @"<3 "],
+    @"furry": @[@"OwO What's this? ", @"OwO ", @"H-hewwo?? ", @"Huohhhh. ", @"Haiiii! ", @"UwU ", @"OWO ", @"HIIII! ", @"<3 ", @"Kawaii ne, "],
     @"pirate": @[@"Arr, matey! ", @"Arrr! ", @"Ahoy. ", @"Yo ho ho! "],
-    @"nepeta": @[@":33 < "]
+    @"nepeta": @[@":33 < ", @"yare yare.. ", @"yare yare daze.. ", @"177013 ", @"Kawaii ne, ", @"NANI?! ", @"MUDA MUDA MUDA, ", @"ORA ORA ORA ", @"DIO! ", @"JOJO! ", @"JOTARO! "]
 };
 
 static NSDictionary *suffixes = @{
-    @"furry": @[@" :3", @" UwU", @" ʕʘ‿ʘʔ", @" >_>", @" ^_^", @"..", @" Huoh.", @" ^-^", @" ;_;", @" ;-;", @" xD", @" x3", @" :D", @" :P", @" ;3", @" XDDD", @", fwendo", @" ㅇㅅㅇ", @" (人◕ω◕)", @"（＾ｖ＾）", @" Sigh.", @" >_<"]
+    @"furry": @[@" :3", @" UwU", @" ʕʘ‿ʘʔ", @" >_>", @" ^_^", @"..", @" Huoh.", @" ^-^", @" ;_;", @" ;-;", @" xD", @" x3", @" :D", @" :P", @" ;3", @" XDDD", @", fwendo ", @" ㅇㅅㅇ", @" (人◕ω◕)", @" （＾ｖ＾）"]
 };
 
 static NSDictionary *replacement = @{
@@ -51,7 +51,7 @@ static NSDictionary *replacement = @{
         @"fer": @"fur",
         @"pau": @"paw",
         @"po": @"paw",
-        @"best": @"bestest",
+        @"best": @"KAWAII",
         @"ee": @"33",
         @"EE": @"33",
     }
