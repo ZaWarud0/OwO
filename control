@@ -1,7 +1,7 @@
 Package: me.nepeta.owo
 Name: OwO
 Depends: mobilesubstrate
-Version: 0.3.0
+Version: 0.3.0+emoticon_test-1
 Architecture: iphoneos-arm
 Description: OwO what's this!?
 Maintainer: Nepeta
