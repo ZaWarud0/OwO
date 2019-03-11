@@ -2,7 +2,8 @@
 
 static NSDictionary *prefixes = @{
     @"furry": @[@"OwO ", @"H-hewwo?? ", @"Huohhhh. ", @"Haiiii! ", @"UwU ", @"OWO ", @"HIIII! ", @"<3 "],
-    @"pirate": @[@"Arr, matey! ", @"Arrr! ", @"Ahoy. ", @"Yo ho ho! "]
+    @"pirate": @[@"Arr, matey! ", @"Arrr! ", @"Ahoy. ", @"Yo ho ho! "],
+    @"nepeta": @[@":33 < "]
 };
 
 static NSDictionary *suffixes = @{
@@ -41,6 +42,14 @@ static NSDictionary *replacement = @{
         @"this": @"'tis",
         @"g ": @"' ",
         @"you": @"ye",
+    },
+    @"nepeta": @{
+        @"awful": @"pawful",
+        @"per": @"purr",
+        @"fer": @"fur",
+        @"pau": @"paw",
+        @"ee": @"33",
+        @"EE": @"33"
     }
 };
 
