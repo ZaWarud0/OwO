@@ -44,6 +44,15 @@ NSString *owoify (NSString *text, bool replacementOnly) {
 
 %hook NCNotificationContentView
 
+-(void)setPrimaryText:(NSString *)orig {
+    if (!orig) {
+        %orig(orig);
+        return;
+    }
+    
+    %orig(owoify(orig, true));
+}
+
 -(void)setSecondaryText:(NSString *)orig {
     if (!orig) {
         %orig(orig);
