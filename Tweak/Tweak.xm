@@ -15,6 +15,8 @@ static NSDictionary *replacement = @{
         @"r": @"w",
         @"l": @"w",
         @"R": @"W",
+        @"L": @"W",
+        @"ow": @"OwO",
         @"no": @"nu",
         @"has": @"haz",
         @"have": @"haz",
