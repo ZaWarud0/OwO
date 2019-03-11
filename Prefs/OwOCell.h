@@ -179,4 +179,6 @@
 
 @interface OwOCell : PSTableCell <PSHeaderFooterView>
 
+@property (nonatomic, retain) _UIGlintyStringView* stringView;
+
 @end

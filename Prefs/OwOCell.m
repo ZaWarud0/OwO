@@ -1,9 +1,7 @@
 #import "OwOCell.h"
 #import <Preferences/PSSpecifier.h>
 
-@implementation OwOCell {
-	_UIGlintyStringView *_stringView;
-}
+@implementation OwOCell
 
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier specifier:(PSSpecifier *)specifier {
 	self = [super initWithStyle:style reuseIdentifier:reuseIdentifier specifier:specifier];
@@ -12,13 +10,13 @@
 		self.backgroundColor = [UIColor clearColor];
 		self.backgroundView = nil;
 
-		_stringView = [[_UIGlintyStringView alloc] initWithText:@"OwO" andFont:[UIFont systemFontOfSize:40]];
-		_stringView.frame = self.contentView.bounds;
-		_stringView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
-		[self.contentView addSubview:_stringView];
+		self.stringView = [[_UIGlintyStringView alloc] initWithText:@"OwO" andFont:[UIFont systemFontOfSize:40]];
+		self.stringView.frame = self.contentView.bounds;
+		self.stringView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+		[self.contentView addSubview:self.stringView];
 
-        [_stringView setChevronStyle:0];
-        [_stringView show];
+        [self.stringView setChevronStyle:0];
+        [self.stringView show];
 
 		self.imageView.hidden = YES;
 		self.textLabel.hidden = YES;
@@ -33,7 +31,10 @@
 	return self;
 }
 
-#pragma mark - PSHeaderFooterView
+- (void)willMoveToWindow:(id)window {
+    [super layoutSubviews];
+    [self.stringView show];
+}
 
 - (CGFloat)preferredHeightForWidth:(CGFloat)width {
 	return 150;
