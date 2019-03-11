@@ -1,6 +1,6 @@
 Package: me.nepeta.owo
 Name: OwO
-Depends: mobilesubstrate
+Depends: mobilesubstrate, ws.hbang.common (>= 1.11)
 Version: 0.1.0
 Architecture: iphoneos-arm
 Description: OwO what's this!?
