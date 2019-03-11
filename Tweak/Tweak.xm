@@ -1,7 +1,8 @@
 #import <Cephei/HBPreferences.h>
 
 static NSDictionary *prefixes = @{
-    @"furry": @[@"OwO ", @"H-hewwo?? ", @"Huohhhh. ", @"Haiiii! ", @"UwU ", @"OWO ", @"HIIII! ", @"<3 "]
+    @"furry": @[@"OwO ", @"H-hewwo?? ", @"Huohhhh. ", @"Haiiii! ", @"UwU ", @"OWO ", @"HIIII! ", @"<3 "],
+    @"pirate": @[@"Arr, matey! ", @"Arrr! ", @"Ahoy. ", @"Yo ho ho! "]
 };
 
 static NSDictionary *suffixes = @{
@@ -16,7 +17,7 @@ static NSDictionary *replacement = @{
         @"no": @"nu",
         @"has": @"haz",
         @"have": @"haz",
-        @"you": @"uu"
+        @"you": @"uu",
     },
     @"leet": @{
         @"cks": @"x",
@@ -25,6 +26,8 @@ static NSDictionary *replacement = @{
         @"and": @"&",
         @"anned": @"&",
         @"porn": @"pr0n",
+        @"lol": @"lulz",
+        @"the ": @"teh ",
         @"a": @"4",
         @"o": @"0",
         @"e": @"3",
@@ -33,7 +36,11 @@ static NSDictionary *replacement = @{
         @"z": @"2",
         @"l": @"1",
         @"t": @"7",
-        @"lol": @"lulz",
+    },
+    @"pirate": @{
+        @"this": @"'tis",
+        @"g ": @"' ",
+        @"you": @"ye",
     }
 };
 
