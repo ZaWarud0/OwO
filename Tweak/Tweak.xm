@@ -1,3 +1,5 @@
+#import <Cephei/HBPreferences.h>
+
 static NSDictionary *prefixes = @{
     @"furry": @[@"OwO ", @"H-hewwo?? ", @"Huohhhh. ", @"Haiiii! ", @"UwU ", @"OWO ", @"HIIII! ", @"<3 "]
 };
@@ -18,7 +20,7 @@ static NSDictionary *replacement = @{
     }
 };
 
-static NSString *mode = @"furry";
+static NSString *mode = nil;
 
 NSString *owoify (NSString *text, bool replacementOnly) {
     NSString *temp = [text copy];
@@ -42,6 +44,8 @@ NSString *owoify (NSString *text, bool replacementOnly) {
     return temp;
 }
 
+%group OwONotifications
+
 %hook NCNotificationContentView
 
 -(void)setPrimaryText:(NSString *)orig {
@@ -63,3 +67,17 @@ NSString *owoify (NSString *text, bool replacementOnly) {
 }
 
 %end
+
+%end
+
+%ctor {
+    HBPreferences *file = [[HBPreferences alloc] initWithIdentifier:@"me.nepeta.owo"];
+
+    if ([([file objectForKey:@"Enabled"] ?: @(YES)) boolValue]) {
+        mode = [file objectForKey:@"Enabled"] ?: @"furry";
+
+        if ([([file objectForKey:@"EnabledNotifications"] ?: @(YES)) boolValue]) {
+            %init(OwONotifications);
+        }
+    }
+}
