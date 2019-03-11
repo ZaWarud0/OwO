@@ -1,4 +1,4 @@
-static NSArray *prefixes = @[@"OwO ", @"H-hewwo?? ", @"Huohhhh. ", @"Haiiii! ", @"UwU ", @"OWO ", @"HIIII! ", @"<3 "];
+static NSArray *prefixes = @[@"OwO ", @"H-hewwo?? ", @"Huohhhh. ", @"Haiiii! ", @"UwU ", @"OWO ", @"HIIII! ", @"<3 ", @"Kawaii ne, "];
 static NSArray *suffixes = @[@" :3", @" UwU", @" ʕʘ‿ʘʔ", @" >_>", @" ^_^", @"..", @" Huoh.", @" ^-^", @" ;_;", @" ;-;", @" xD", @" x3", @" :D", @" :P", @" ;3", @" XDDD", @", fwendo ", @"ㅇㅅㅇ ", @"(人◕ω◕) ", @"（＾ｖ＾） "];
 
 %hook NCNotificationContentView
@@ -16,6 +16,9 @@ static NSArray *suffixes = @[@" :3", @" UwU", @" ʕʘ‿ʘʔ", @" >_>", @" ^_^",
     orig = [orig stringByReplacingOccurrencesOfString:@"have" withString:@"haz"];
     orig = [orig stringByReplacingOccurrencesOfString:@"has" withString:@"haz"];
     orig = [orig stringByReplacingOccurrencesOfString:@"you" withString:@"uu"];
+    orig = [orig stringByReplacingOccurrencesOfString:@"R" withString:@"W"];
+    orig = [orig stringByReplacingOccurrencesOfString:@"fuck" withString:@"fwucky ducky"];
+    orig = [orig stringByReplacingOccurrencesOfString:@"Fuck" withString:@"Fwucky Ducky"];
 
 
     NSString *text = [prefix stringByAppendingString:orig];
