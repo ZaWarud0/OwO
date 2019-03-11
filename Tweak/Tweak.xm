@@ -42,6 +42,7 @@ static NSDictionary *replacement = @{
         @"this": @"'tis",
         @"g ": @"' ",
         @"you": @"ye",
+        @"You": @"Ye",
     },
     @"nepeta": @{
         @"awful": @"pawful",
