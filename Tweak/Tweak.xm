@@ -3,7 +3,7 @@
 static NSDictionary *prefixes = @{
     @"furry": @[@"OwO What's this? ", @"OwO ", @"H-hewwo?? ", @"Huohhhh. ", @"Haiiii! ", @"UwU ", @"OWO ", @"HIIII! ", @"<3 ", @"Kawaii ne, "],
     @"pirate": @[@"Arr, matey! ", @"Arrr! ", @"Ahoy. ", @"Yo ho ho! "],
-    @"nepeta": @[@":33 < ", @"yare yare.. ", @"yare yare daze.. ", @"177013 ", @"Kawaii ne, ", @"NANI?! ", @"MUDA MUDA MUDA, ", @"ORA ORA ORA ", @"DIO! ", @"JOJO! ", @"JOTARO! "]
+    @"anime": @[@":33 < ", @"yare yare.. ", @"yare yare daze.. ", @"177013 ", @"Kawaii ne, ", @"NANI?! ", @"MUDA MUDA MUDA, ", @"ORA ORA ORA ", @"DIO! ", @"JOJO! ", @"JOTARO! "]
 };
 
 static NSDictionary *suffixes = @{
@@ -44,7 +44,7 @@ static NSDictionary *replacement = @{
         @"you": @"ye",
         @"You": @"Ye",
     },
-    @"nepeta": @{
+    @"anime": @{
         @"awful": @"pawful",
         @"per": @"purr",
         @"por": @"purr",
