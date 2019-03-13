@@ -54,6 +54,18 @@ static NSDictionary *replacement = @{
         @"best": @"KAWAII",
         @"ee": @"33",
         @"EE": @"33",
+        @"what": @"nani",
+        @"WHAT": @"NANI",
+        @"What": @"Nani",
+        @"wHat": @"nAni",
+        @"whAt": @"naNi",
+        @"whaT": @"nanI",
+        @"WHAt": @"NANi",
+        @"WhAT": @"NaNI",
+        @"WHaT": @"NAnI",
+        @"wHAT": @"nANI",
+        @"WhAt": @"NaNi",
+        @"wHaT": @"nAnI"
     }
 };
 
