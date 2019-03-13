@@ -1,7 +1,7 @@
 #import <Cephei/HBPreferences.h>
 
 static NSDictionary *prefixes = @{
-    @"furry": @[@"OwO What's this? ", @"OwO ", @"H-hewwo?? ", @"Huohhhh. ", @"Haiiii! ", @"UwU ", @"OWO ", @"HIIII! ", @"<3 ", @"Kawaii ne, "],
+    @"furry": @[@"OwO What's this? ", @"OwO ", @"H-hewwo?? ", @"Huohhhh. ", @"Haiiii! ", @"UwU ", @"OWO ", @"HIIII! ", @"<3 "],
     @"pirate": @[@"Arr, matey! ", @"Arrr! ", @"Ahoy. ", @"Yo ho ho! "],
     @"anime": @[@":33 < ", @"yare yare.. ", @"yare yare daze.. ", @"177013 ", @"Kawaii ne, ", @"NANI?! ", @"MUDA MUDA MUDA, ", @"ORA ORA ORA ", @"DIO! ", @"JOJO! ", @"JOTARO! "]
 };
