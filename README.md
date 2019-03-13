@@ -1,4 +1,5 @@
 # OwO
 
 OwO what's this!?
-*seriously, what the fuck is this?*
+
+*seriously, what is this, please help, i don't know what's going on with my notifications and labels.*
