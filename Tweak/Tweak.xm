@@ -27,6 +27,7 @@ static NSDictionary *replacement = @{
         @"and": @"&",
         @"anned": @"&",
         @"porn": @"pr0n",
+        @"hentai": @"hen tie",
         @"lol": @"lulz",
         @"the ": @"teh ",
         @"a": @"4",
