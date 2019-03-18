@@ -66,7 +66,8 @@ static NSDictionary *replacement = @{
         @"WHaT": @"NAnI",
         @"wHAT": @"nANI",
         @"WhAt": @"NaNi",
-        @"wHaT": @"nAnI"
+        @"wHaT": @"nAnI",
+        @"porn": @"hentai"
     }
 };
 
