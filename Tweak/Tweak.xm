@@ -15,10 +15,13 @@ static NSDictionary *replacement = @{
         @"r": @"w",
         @"l": @"w",
         @"R": @"W",
+        @"L": @"W",
+        @"ow": @"OwO",
         @"no": @"nu",
         @"has": @"haz",
         @"have": @"haz",
         @"you": @"uu",
+        @"the ": @"da ",
     },
     @"leet": @{
         @"cks": @"x",
@@ -43,6 +46,15 @@ static NSDictionary *replacement = @{
         @"g ": @"' ",
         @"you": @"ye",
         @"You": @"Ye",
+        @"Hello": @"Ahoy!",
+        @"Hey": @"Ahoy!",
+        @"There": @"Thar",
+        @"Is": @"Be",
+        @"hello": @"ahoy!",
+        @"there": @"thar",
+        @"is": @"be",
+        @"What": @"Wha",
+        @"what": @"wha",
     },
     @"nepeta": @{
         @"awful": @"pawful",
@@ -68,14 +80,14 @@ NSString *owoify (NSString *text, bool replacementOnly) {
         }
     }
 
-    if (!replacementOnly) {
-        if (prefixes[mode]) {
-            temp = [prefixes[mode][arc4random() % [prefixes[mode] count]] stringByAppendingString:temp];
-        }
+    if (replacementOnly) return temp;
 
-        if (suffixes[mode]) {
-            temp = [temp stringByAppendingString:suffixes[mode][arc4random() % [suffixes[mode] count]]];
-        }
+    if (prefixes[mode]) {
+        temp = [prefixes[mode][arc4random() % [prefixes[mode] count]] stringByAppendingString:temp];
+    }
+
+    if (suffixes[mode]) {
+        temp = [temp stringByAppendingString:suffixes[mode][arc4random() % [suffixes[mode] count]]];
     }
 
     return temp;
