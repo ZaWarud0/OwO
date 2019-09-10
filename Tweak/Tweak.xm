@@ -3,7 +3,7 @@
 static NSDictionary *prefixes = @{
     @"furry": @[@"OwO What's this? ", @"OwO ", @"H-hewwo?? ", @"Huohhhh. ", @"Haiiii! ", @"UwU ", @"OWO ", @"HIIII! ", @"<3 "],
     @"pirate": @[@"Arr, matey! ", @"Arrr! ", @"Ahoy. ", @"Yo ho ho! "],
-    @"anime": @[@":33 < ", @"yare yare.. ", @"yare yare daze.. ", @"177013 ", @"Kawaii ne, ", @"NANI?! ", @"MUDA MUDA MUDA, ", @"ORA ORA ORA ", @"DIO! ", @"JOJO! ", @"JOTARO! "]
+    @"anime": @[@":33 < ", @"177013 ", @"O kawaii koto, ", @"NANI?! "]
 };
 
 static NSDictionary *suffixes = @{
@@ -46,15 +46,13 @@ static NSDictionary *replacement = @{
         @"You": @"Ye",
     },
     @"anime": @{
-        @"awful": @"pawful",
-        @"per": @"purr",
-        @"por": @"purr",
-        @"fer": @"fur",
-        @"pau": @"paw",
-        @"po": @"paw",
+        @"stop": @"yamero",
+        @"STOP": @"YAMERO",
+        @"Stop": @"Yamero",
         @"best": @"KAWAII",
-        @"ee": @"33",
-        @"EE": @"33",
+        @"cute": @"kawaii",
+        @"Cute": @"Kawaii",
+        @"CUTE": @"KAWAII",
         @"what": @"nani",
         @"WHAT": @"NANI",
         @"What": @"Nani",
