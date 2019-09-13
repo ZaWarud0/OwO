@@ -4,6 +4,7 @@ static NSDictionary *prefixes = @{
     @"furry": @[@"OwO What's this? ", @"OwO ", @"H-hewwo?? ", @"Huohhhh. ", @"Haiiii! ", @"UwU ", @"OWO ", @"HIIII! ", @"<3 "],
     @"pirate": @[@"Arr, matey! ", @"Arrr! ", @"Ahoy. ", @"Yo ho ho! "],
     @"anime": @[@":33 < ", @"177013 ", @"O kawaii koto, ", @"NANI?! "]
+    @"jojo": @[@"JOJO! ",@"DIO! "]
 };
 
 static NSDictionary *suffixes = @{
@@ -49,6 +50,7 @@ static NSDictionary *replacement = @{
         @"stop": @"yamero",
         @"STOP": @"YAMERO",
         @"Stop": @"Yamero",
+        @"Wha-": @"Kako ua-",
         @"best": @"KAWAII",
         @"cute": @"kawaii",
         @"Cute": @"Kawaii",
